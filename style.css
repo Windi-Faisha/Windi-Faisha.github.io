@@ -583,9 +583,14 @@ color: white;
     margin-bottom: 30px;
 }
 .wishes-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    box-sizing: border-box;
+}
 }
 
 .wishes-form input,
