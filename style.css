@@ -2974,6 +2974,12 @@ color: white;
 
     aspect-ratio: 1 / 1;
 }
+/* Foto pengantin menjadi foto utama */
+.gallery-item:first-child {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 9;
+
+}
 
 /* Foto */
 
