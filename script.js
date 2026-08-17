@@ -12,6 +12,16 @@ function bukaUndangan() {
         void mainContent.offsetWidth;
         mainContent.classList.add("fade-in");
 
+         // Mulai musik Dayasmara
+        const bgMusic = document.getElementById("bgMusic");
+
+        if (bgMusic) {
+            bgMusic.volume = 0.25;
+            bgMusic.play().catch(function(error) {
+                console.log("Musik tidak dapat diputar:", error);
+            });
+        }
+
         window.scrollTo({
             top: 0,
             behavior: "smooth"
