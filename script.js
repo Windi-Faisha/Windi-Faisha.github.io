@@ -1,5 +1,5 @@
 function bukaUndangan() {
-    // Mulai musik Dayasmara
+    // Mulai musik jawa
     const bgMusic = document.getElementById("bgMusic");
 
     if (bgMusic) {
