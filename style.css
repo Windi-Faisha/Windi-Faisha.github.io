@@ -3872,3 +3872,75 @@ color: white;
         padding: 35px 18px;
     }
 }
+
+/* ===== TOMBOL MUSIK ===== */
+
+.music-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    border: 1px solid #b875d6;
+
+    background: rgba(20, 10, 30, 0.9);
+    color: #f1d9ff;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    z-index: 9999;
+
+    box-shadow:
+        0 0 12px rgba(168, 92, 201, 0.35);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 20px rgba(168, 92, 201, 0.55);
+}
+
+.music-button.playing {
+    animation: musicRotate 4s linear infinite;
+}
+
+@keyframes musicRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 600px) {
+
+    .music-button {
+        width: 44px;
+        height: 44px;
+
+        right: 15px;
+        bottom: 15px;
+
+        font-size: 18px;
+    }
+}
+
+
+
+
+
