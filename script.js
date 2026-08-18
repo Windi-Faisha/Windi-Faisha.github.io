@@ -168,6 +168,24 @@ function salinRekening() {
         });
 }  
 
+function toggleMusic() {
+    const bgMusic = document.getElementById("bgMusic");
+    const musicButton = document.getElementById("musicButton");
+
+    if (!bgMusic || !musicButton) return;
+
+    if (bgMusic.paused) {
+        bgMusic.play().then(function() {
+            musicButton.classList.add("playing");
+        }).catch(function(error) {
+            console.log("Musik tidak dapat diputar:", error);
+        });
+    } else {
+        bgMusic.pause();
+        musicButton.classList.remove("playing");
+    }
+}
+
 
         
 
